@@ -92,7 +92,7 @@ const ContactProfile = ({ friends }) => {
               <h4 className="font-semibold text-gray-400 text-sm  tracking-wide">Relationship Goal</h4>
               <p className="text-gray-800 font-medium">Connect every <span className="font-bold">{isData.goal} days</span></p>
             </div>
-            <button className="flex btn items-center gap-1 text-sm text-gray-400 hover:text-blue-500 font-medium transition-colors text-black bg-gray-100 btn btn-accent font-bold">
+            <button className="flex btn items-center gap-1 text-sm  hover:text-blue-500 font-medium transition-colors text-black bg-gray-100 btn btn-accent font-bold">
               Edit
             </button>
           </div>
