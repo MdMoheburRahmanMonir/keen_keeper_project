@@ -13,7 +13,7 @@ const Counterdata = () => {
 
         counterData.map((data, index) => (
             <div key={index} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-                <div className="text-3xl font-bold text-gray-800 mb-1"><CountUp end={data.numberValue} duration={2} > {data.numberValue}</CountUp></div>
+                <div className="text-3xl font-bold text-gray-800 mb-1"><CountUp end={data.numberValue} duration={3} > {data.numberValue}</CountUp></div>
                 <div className="text-sm text-gray-500">{data.fildname} </div>
             </div>
         ))
