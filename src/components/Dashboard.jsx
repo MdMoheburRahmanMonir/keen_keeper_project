@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { GoPlus } from 'react-icons/go';
-import Counterdata from './Counterdata';
+import Counterdata from './Counterdata'; 
 
 const Dashboard = () => {
     

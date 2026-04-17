@@ -98,11 +98,11 @@ const page = () => {
 
                         filterdata.length == 0 ? (
                             <div className="flex flex-col items-center justify-center mb-20 text-center mt-20">
-                                <div className="mb-6 p-4 rounded-full border-2 border-gray-200">
+                                <div className="mb-6 p-4 rounded-full border-2 border-gray-200 text-gray-500">
                                     <FaRegClock size={48} className="text-gray-300 stroke-[1.5]" />
                                 </div>
 
-                                <h2 className="text-2xl font-semibold mb-3">No timelines yet</h2>
+                                <h2 className="text-2xl font-semibold mb-3 text-gray-500">No timelines yet</h2>
 
                                 <p className="max-w-md text-gray-500 leading-relaxed">
                                     Your timeline is empty. Start adding important timelines or

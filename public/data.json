@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "name": "John Doe",
+    "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "john.doe@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+    "email": "sarah.chen@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "gym buddy"],
+    "bio": "Colleague from the marketing team. We go to the gym together every week.",
+    "goal": 7,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 2,
+    "name": "Ahmed Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+    "email": "ahmed.rahman@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["school", "childhood"],
+    "bio": "Best friend since high school. We grew up in the same neighborhood.",
+    "goal": 10,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 3,
+    "name": "Priya Sharma",
+    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "email": "priya.sharma@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["family friend"],
+    "bio": "Family friend from Sylhet. Always brings the best homemade sweets.",
+    "goal": 14,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "Michael Okoro",
+    "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+    "email": "michael.okoro@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["football", "university"],
+    "bio": "University football teammate. Still argue about who scored the winning goal.",
+    "goal": 7,
+    "next_due_date": "2025-07-21"
+  },
+  {
+    "id": 5,
+    "name": "Ayesha Khan",
+    "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+    "email": "ayesha.khan@example.com",
+    "days_since_contact": 7,
+    "status": "almost due",
+    "tags": ["cousin", "close family"],
+    "bio": "My cousin. We used to play together every summer vacation.",
+    "goal": 10,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 6,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+    "email": "david.kim@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through online gaming. Still play Valorant together every weekend.",
+    "goal": 14,
+    "next_due_date": "2025-07-16"
+  },
+  {
+    "id": 7,
+    "name": "Fatima Ali",
+    "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+    "email": "fatima.ali@example.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["neighbor", "book club"],
+    "bio": "Neighbor and book club member. We discuss books over chai every month.",
+    "goal": 7,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 8,
+    "name": "Rahul Patel",
+    "picture": "https://randomuser.me/api/portraits/men/9.jpg",
+    "email": "rahul.patel@example.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["college", "cricket"],
+    "bio": "College cricket team captain. Still challenges me to matches.",
+    "goal": 10,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 9,
+    "name": "Nadia Hossain",
+    "picture": "https://randomuser.me/api/portraits/women/10.jpg",
+    "email": "nadia.hossain@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "best friend"],
+    "bio": "School best friend. We share all our secrets even now.",
+    "goal": 14,
+    "next_due_date": "2025-07-14"
+  }
+]

@@ -8,9 +8,7 @@ import { useContext } from 'react';
 
 const Friends = () => {
 
-    const data = useContext(GetContext); 
-    
-    console.log(data);
+    const data = useContext(GetContext);  
     
 
     const getUrl = usePathname();

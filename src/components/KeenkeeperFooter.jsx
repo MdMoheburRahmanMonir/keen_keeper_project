@@ -8,7 +8,7 @@ const KeenkeeperFooter = () => {
         <footer className="bg-[#244D3F] text-white w-full py-15">
             <div className="container mx-auto text-center">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-                    KeenKeeper
+                    KeenKeeper 
                 </h1>
 
                 <p className="text-[16px]   text-gray-200 mb-10 max-w-2xl mx-auto ">

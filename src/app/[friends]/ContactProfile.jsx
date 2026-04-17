@@ -8,6 +8,7 @@ import { IoMdText } from 'react-icons/io';
 import { IoVideocam } from 'react-icons/io5';
 import { LuArchive, LuPhoneCall } from 'react-icons/lu';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
+import { toast } from 'react-toastify';
 
 const ContactProfile = ({ friends }) => {
   const maindata = useContext(GetContext)
@@ -23,7 +24,9 @@ const ContactProfile = ({ friends }) => {
 
   const CallData = (value) => {
     setHistoryData([...historyData, value])
-
+    toast(`🤩 ${value[0]} with ${value[1]}`, {
+      position: "top-left",
+    })
   }
 
   return (
@@ -58,11 +61,11 @@ const ContactProfile = ({ friends }) => {
           </div>
 
           <div className="grid grid-cols-1 gap-3">
-            <button className="flex items-center justify-center gap-2 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+            <button className="flex items-center justify-center gap-2 py-3 bg-white border text-green-500 hover:bg-green-50 border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
               <RiNotificationSnoozeLine className='text-[20px]'></RiNotificationSnoozeLine>
               Snooze 2 weeks
             </button>
-            <button className="flex items-center justify-center gap-2 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+            <button className="flex items-center justify-center gap-2 py-3 bg-white border border-gray-200 rounded-xl  text-yellow-500 hover:bg-yellow-50 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
               <LuArchive className='text-[20px]'></LuArchive>
               Archive
             </button>
@@ -101,15 +104,15 @@ const ContactProfile = ({ friends }) => {
             <h4 className="font-bold text-gray-800 mb-4 text-lg">Quick Check-In</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  gap-4">
               <button onClick={() => CallData(['Call', ` ${isData.name}`, formattedDate])} className="flex flex-col items-center justify-center gap-3 p-8 bg-white border border-gray-100 rounded-2xl hover:shadow-lg hover:border-blue-100 transition-all group">
-                <LuPhoneCall className='text-[25px] text-gray-500'></LuPhoneCall>
+                <LuPhoneCall className='text-[25px] text-cyan-500'></LuPhoneCall>
                 <span className="text-sm font-bold text-gray-600"> Call</span>
               </button>
               <button onClick={() => CallData(['Text', ` ${isData.name}`, formattedDate])} className="flex flex-col items-center justify-center gap-3 p-8 bg-white border border-gray-100 rounded-2xl hover:shadow-lg hover:border-blue-100 transition-all group">
-                <IoMdText className='text-[25px] text-gray-500'></IoMdText>
+                <IoMdText className='text-[25px] text-blue-500 '></IoMdText>
                 <span className="text-sm font-bold text-gray-600">Text</span>
               </button>
               <button onClick={() => CallData(['Video', `${isData.name}`, formattedDate])} className="flex flex-col items-center justify-center gap-3 p-8 bg-white border border-gray-100 rounded-2xl hover:shadow-lg hover:border-blue-100 transition-all group">
-                <IoVideocam className='text-[25px] text-gray-500'></IoVideocam>
+                <IoVideocam className='text-[25px] text-green-500'></IoVideocam>
                 <span className="text-sm font-bold text-gray-600">Video</span>
               </button>
             </div>
@@ -118,7 +121,9 @@ const ContactProfile = ({ friends }) => {
           <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col text-start justify-between  space-y-5">
             <div className='flex justify-between text-center items-center'>
               <h4 className="text-2xl font-bold text-gray-800">Recent Interactions</h4>
-              <Link href={'/timeline'}><button className="text-sm   flex items-center gap-1 hover:scale-105 duration-150 text-black bg-gray-100 btn btn-accent font-bold"> <FaHistory></FaHistory> Full History</button></Link>
+              <Link onClick={() => toast(`Let's go Timeline page`, {
+                position: "top-left",
+              })} href={'/timeline'}><button className="text-sm   flex items-center gap-1 hover:scale-105 duration-150 text-black bg-gray-100 btn btn-accent font-bold"> <FaHistory></FaHistory> Full History</button></Link>
             </div>
             <div className='  space-y-5 '>
               {

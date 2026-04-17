@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Mycontext from "@/contextdata/Mycontext";
+import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,9 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const response = await fetch('http://localhost:3000/data.json');
+  const response = await fetch('https://keen-keeper-project-iota.vercel.app/data.json',{
+    cache: 'no-store'
+  });
   const data = await response.json();
   return (
     <html
@@ -28,6 +31,7 @@ export default async function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col !bg-white">
         <Mycontext data={data}> 
+          <ToastContainer></ToastContainer>
           <Navbar></Navbar>
           {children}
         </Mycontext>

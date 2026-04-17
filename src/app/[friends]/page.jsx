@@ -4,7 +4,9 @@ import NotFound from '../not-found';
 import ContactProfile from './ContactProfile';
 
 const FriendsPage = async ({ params }) => {
-    const response = await fetch('http://localhost:3000/data.json');
+    const response = await fetch('https://keen-keeper-project-iota.vercel.app/data.json',{
+    cache: 'no-store'
+  });
     const data = await response.json();
 
 
