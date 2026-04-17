@@ -11,9 +11,8 @@ const Friends = () => {
     const data = useContext(GetContext);  
     
 
-    const getUrl = usePathname();
-
-     
+    const getUrl = usePathname(); 
+    
 
     return (
         <div className="p-10  min-h-screen">
@@ -21,7 +20,7 @@ const Friends = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {data.map((friend, ind) => (
-                    <Link href={`/${friend.id}`}   key={ind}>
+                    <Link href={`/friends/${friend.id}`}   key={ind}>
                         <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
 
                             <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-gray-200">

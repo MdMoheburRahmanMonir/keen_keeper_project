@@ -17,9 +17,7 @@ const page = () => {
         setToggling(!toggling)
     }
 
-
     const renderdata = (value) => {
-
 
 
         if (value == 'All') {
@@ -50,8 +48,6 @@ const page = () => {
             word.toLowerCase().includes(value.toLowerCase())
         ))
         setFilterdata(isMatch)
-
-
     }
 
     return (
@@ -64,16 +60,15 @@ const page = () => {
                             <div className="flex justify-between items-center ">
                                 <div className="relative">
                                     <div className=' '>
-                                        <button onClick={() => filteropen()} className="flex rounded-2xl items-center gap-2 px-4 py-2 btn btn-outline ">
-                                            <span className="text-sm">All</span>
-                                            <FaChevronDown size={16} className="text-gray-400" />
-                                        </button>
-                                        <ul className={` pt-3 absolute ${toggling == true ? 'hidden' : 'block'} bg-white rounded-2xl  text-[14px] p-2 space-y-2 shadow w-[140px]`}>
-                                            <li className='hover:bg-cyan-200 hover:rounded-2xl pl-2' onClick={() => renderdata('All')}>All </li>
-                                            <li className='hover:bg-cyan-200 hover:rounded-2xl pl-2' onClick={() => renderdata('Call')}>Call </li>
-                                            <li className='hover:bg-cyan-200 hover:rounded-2xl pl-2' onClick={() => renderdata('Text')}>Text </li>
-                                            <li className='hover:bg-cyan-200 hover:rounded-2xl pl-2' onClick={() => renderdata('Video')}>Video </li>
-                                        </ul>
+                                        <div className="dropdown bg-white ">
+                                            <div tabIndex={0} role="button" className="border border-2 px-5 py-1 rounded-md  m-1 flex items-center gap-2"> <span>Filter </span>  <FaChevronDown size={16} className="text-gray-400" />  </div>
+                                            <ul tabIndex="-1" className="dropdown-content !bg-white menu  rounded-box z-1 w-52 p-2 shadow-sm">
+                                                <li onClick={() => renderdata('All')} className='hover:bg-gray-100'><a>All </a></li>
+                                                <li onClick={() => renderdata('Call')} className='hover:bg-gray-100'><a>Call </a></li>
+                                                <li onClick={() => renderdata('Text')} className='hover:bg-gray-100'><a>Text </a></li>
+                                                <li onClick={() => renderdata('Video')} className='hover:bg-gray-100'><a>Video </a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -123,7 +118,7 @@ const page = () => {
                                                     <h1>{item[1]}</h1>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div className='text-gray-500'>
                                                 <h1>{item[2]}</h1>
                                             </div>
                                         </div>

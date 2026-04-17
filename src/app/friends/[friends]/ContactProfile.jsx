@@ -12,9 +12,8 @@ import { toast } from 'react-toastify';
 
 const ContactProfile = ({ friends }) => {
   const maindata = useContext(GetContext)
-  const isData = maindata.find(item => item.id == friends)
-
-
+  const isData = maindata.find(item => item.id == friends) 
+  
   const [historyData, setHistoryData] = useContext(HistoryContext)
 
 
@@ -23,7 +22,7 @@ const ContactProfile = ({ friends }) => {
   const formattedDate = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 
   const CallData = (value) => {
-    setHistoryData([...historyData, value])
+    setHistoryData([value, ...historyData])
     toast(`🤩 ${value[0]} with ${value[1]}`, {
       position: "top-left",
     })
