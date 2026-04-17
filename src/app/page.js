@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Dashboard from "@/components/Dashboard"; 
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans  text-black">
-        Home page
+    <div className="">
+      <div className="container mx-auto text-center">
+        <Dashboard></Dashboard> 
+      </div> 
     </div>
   );
 }
