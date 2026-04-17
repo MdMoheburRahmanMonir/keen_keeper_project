@@ -2,7 +2,7 @@
 ## Keen Keeper
 
 # Description
-### This project i like a social media platform. This design is mean my friend can Video Call & text me.If this project is only for practice purpose but this project's meaning is like this. And i also can track here that how much call , text & video perform in this media.
+### This project is a conceptual social media platform designed to facilitate seamless communication through video calls and instant messaging. While primarily developed for practice, it features a comprehensive tracking system to monitor user engagement, including the frequency of calls, texts, and video interactions. It’s a showcase of my ability to build interactive, data-driven communication tools.
 
 # Technologies 
     -1️⃣ HTML5
